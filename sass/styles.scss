@@ -8,6 +8,13 @@ $font-size-sm: $font-size-base * 0.875; // 14px
 $font-size-lg: $font-size-base * 1.25; // 20px
 $lead-font-size: $font-size-base * 1.25; // 20px
 
+$h1-font-size: $font-size-base * 1.25;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
 // DISPLAY SIZES
 // Must be declared in rem.
 // For easy conversion: https://nekocalc.com/px-to-rem-converter
@@ -50,13 +57,12 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
+  lg: 1024px,
+  xl: 1440px,
+  xxl: 1920px,
 );
 
 $grid-columns: 12;
-$grid-gutter-width: 1.5rem;
 
 // SPACING
 $spacer: 10px;

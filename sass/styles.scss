@@ -1,10 +1,28 @@
-$primary: #4ff049;
-$secondary: $gray-600;
-$success: $green;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-900;
+$spacer: 10px;
+
+$spacers: (
+  0: 0,
+  1: $spacer,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+);
+
+$theme-colors: (
+  "primary": #1071cc,
+  "secondary": #ff9a01,
+  "success": #1eff00,
+  "info": #00f7ff,
+  "warning": #ff8800,
+  "danger": #ff0000,
+  "light": #e9e9e9,
+  "dark": #363636,
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

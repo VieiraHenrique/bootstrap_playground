@@ -1,3 +1,4 @@
+// SPACING
 $spacer: 10px;
 
 $spacers: (
@@ -14,15 +15,39 @@ $spacers: (
   10: $spacer * 10,
 );
 
+// FONT FAMILY
+$font-family-base: "Arial", sans-serif;
+
+// FONT SIZES
+
+$font-size-base: 1rem; // 16px
+$font-size-sm: $font-size-base * 0.875; // 14px
+$font-size-lg: $font-size-base * 1.25; // 20px
+
+// DISPLAY SIZES
+// Must be declared in rem. For easy conversion: https://nekocalc.com/px-to-rem-converter
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+);
+
+// BASE COLORS
 $theme-colors: (
-  "primary": #1071cc,
+  "primary": #ccc,
   "secondary": #ff9a01,
+  "tertiary": #fa11c7,
   "success": #1eff00,
   "info": #00f7ff,
   "warning": #ff8800,
   "danger": #ff0000,
   "light": #e9e9e9,
   "dark": #363636,
+  "whatever": #fff,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

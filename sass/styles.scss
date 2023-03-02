@@ -6,6 +6,13 @@ $font-family-base: "Arial", sans-serif;
 $font-size-base: 1rem; // 16px
 $lead-font-size: $font-size-base * 1.25; // 20px
 
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
 $line-height-base: 1;
 
 $paragraph-margin-bottom: 0;
@@ -29,6 +36,7 @@ $display-font-weight: 400;
 $display-line-height: 1.2;
 
 // BASE COLORS
+// Please change these aweful colors !
 $theme-colors: (
   "primary": #ccc,
   "secondary": #ff9a01,
@@ -49,18 +57,31 @@ $link-hover-color: green;
 $link-decoration: none;
 $link-hover-decoration: underline;
 
-// GRID
+// GRID AND CONTAINER
+
+$md: 768px;
+$lg: 1024px;
+$xl: 1440px;
+$xxl: 1920px;
 
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1440px,
-  xxl: 1920px,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
 );
 
 $grid-columns: 12;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
 
 // SPACING
 $spacer: 10px;
@@ -77,6 +98,13 @@ $spacers: (
   8: $spacer * 8,
   9: $spacer * 9,
   10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+  13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./mixins/mixins";

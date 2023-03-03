@@ -1,17 +1,11 @@
 // FONT FAMILY
-$font-family-base: "Arial", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$font-family-base: "Jost", sans-serif;
 
 // TYPO
 
 $font-size-base: 1rem; // 16px
 $lead-font-size: $font-size-base * 1.25; // 20px
-
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
-$h6-font-size: $font-size-base;
 
 $line-height-base: 1;
 
@@ -21,39 +15,60 @@ $paragraph-margin-bottom: 0;
 // Must be declared in rem.
 // For easy conversion: https://nekocalc.com/px-to-rem-converter
 // Can add more displays (7, 8, etc...)
+// I use display classes instead of h1, h2, h3 etc
 
 $display-font-sizes: (
-  1: 5rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem,
-  7: 10rem,
+  1: 3rem,
+  // 48px
+  2: 2.5rem,
+  // 40px
+  3: 1.25rem,
+  // 20px
+  4: 0.938rem,
+  // 15px
+  5: 0.875rem,
+  // 14px
 );
 
 $display-font-weight: 400;
 $display-line-height: 1.2;
 
+// FONT WEIGHTS
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
 // BASE COLORS
-// Please change these aweful colors !
+
+$white: #fff;
+$gray-100: #f1f3f5;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #333136;
+$black: #1d1c1e;
+
+// You can add as many them colors you want with the name you want
 $theme-colors: (
-  "primary": #ccc,
-  "secondary": #ff9a01,
-  "tertiary": #fa11c7,
-  "success": #1eff00,
-  "info": #00f7ff,
-  "warning": #ff8800,
-  "danger": #ff0000,
-  "light": #e9e9e9,
-  "dark": #363636,
-  "whatever": #fff,
+  "peach": #e7816b,
+  "light-peach": #ffad9b,
 );
+
+$body-bg: $white;
+$body-color: $black;
 
 // LINKS
 
-$link-color: blue;
-$link-hover-color: green;
+$link-color: $black;
+$link-hover-color: $black;
 $link-decoration: none;
 $link-hover-decoration: underline;
 
@@ -106,5 +121,4 @@ $spacers: (
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
 @import "./mixins/mixins";

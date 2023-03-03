@@ -6,7 +6,7 @@ $font-family-base: "Jost", sans-serif;
 
 // TYPO
 
-$font-size-base: 2rem; // 16px
+$font-size-base: 1rem; // 16px
 $lead-font-size: $font-size-base * 1.25; // 20px
 
 $line-height-base: 1;
@@ -33,7 +33,7 @@ $display-font-sizes: (
 );
 
 $display-font-weight: 400;
-$display-line-height: 1;
+$display-line-height: 1.1;
 
 // FONT WEIGHTS
 
@@ -100,6 +100,7 @@ $navbar-light-hover-color: $nav-link-hover-color;
 
 // GRID AND CONTAINER
 
+$sm: 576px;
 $md: 768px;
 $lg: 1024px;
 $xl: 1440px;
@@ -107,7 +108,7 @@ $xxl: 1920px;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  sm: $sm,
   md: $md,
   lg: $lg,
   xl: $xl,
@@ -151,5 +152,5 @@ $spacers: (
 @import "./mixins/mixins";
 
 .menu-spacer {
-  margin-top: 162px;
+  margin-top: 122px;
 }

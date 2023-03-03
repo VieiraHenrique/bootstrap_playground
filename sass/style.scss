@@ -1,10 +1,12 @@
+// PUT COMMENT OF WORDPRESS THEME HERE
+
 // FONT FAMILY
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 $font-family-base: "Jost", sans-serif;
 
 // TYPO
 
-$font-size-base: 1rem; // 16px
+$font-size-base: 2rem; // 16px
 $lead-font-size: $font-size-base * 1.25; // 20px
 
 $line-height-base: 1;
@@ -15,7 +17,7 @@ $paragraph-margin-bottom: 0;
 // Must be declared in rem.
 // For easy conversion: https://nekocalc.com/px-to-rem-converter
 // Can add more displays (7, 8, etc...)
-// I use display classes instead of h1, h2, h3 etc
+// I use only display classes for different font sizes
 
 $display-font-sizes: (
   1: 3rem,
@@ -31,35 +33,32 @@ $display-font-sizes: (
 );
 
 $display-font-weight: 400;
-$display-line-height: 1.2;
+$display-line-height: 1;
 
 // FONT WEIGHTS
 
 $font-weight-lighter: 200;
 $font-weight-light: 300;
 $font-weight-normal: 400;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-weight-bolder: 800;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
 
 // BASE COLORS
 
+// Define black and white values
 $white: #fff;
-$gray-100: #f1f3f5;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #333136;
 $black: #1d1c1e;
 
-// You can add as many them colors you want with the name you want
+// Create variables with colors and pass them into the theme colors
+$peach: #e7816b;
+$light-peach: #ffad9b;
+
 $theme-colors: (
-  "peach": #e7816b,
-  "light-peach": #ffad9b,
+  "peach": $peach,
+  "light-peach": $light-peach,
+  "gray-light": #ccc,
+  "gray-dark": #333,
 );
 
 $body-bg: $white;
@@ -70,7 +69,34 @@ $body-color: $black;
 $link-color: $black;
 $link-hover-color: $black;
 $link-decoration: none;
-$link-hover-decoration: underline;
+$link-hover-decoration: none;
+
+// NAV-LINKS
+
+$nav-link-color: $black;
+$nav-link-hover-color: $peach;
+$nav-link-font-size: 14px;
+$nav-link-font-weight: 400;
+
+// DEFINES THE PADDING BETWEEN NAV LINKS
+$wi-nav-link-padding: 44px;
+$wi-nav-link-padding-mobile: 20px;
+
+.navbar-nav {
+  gap: $wi-nav-link-padding;
+}
+
+.offcanvas {
+  .navbar-nav {
+    gap: $wi-nav-link-padding-mobile;
+  }
+}
+
+// Dont't touch this
+$navbar-nav-link-padding-x: 0;
+$navbar-light-color: $nav-link-color;
+$navbar-light-hover-color: $nav-link-hover-color;
+//
 
 // GRID AND CONTAINER
 
@@ -94,8 +120,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
+  xl: 1110px,
+  xxl: 1111px,
 );
 
 // SPACING
@@ -121,4 +147,9 @@ $spacers: (
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "./mixins/mixins";
+
+.menu-spacer {
+  margin-top: 162px;
+}

@@ -118,6 +118,8 @@ $grid-breakpoints: (
 
 $grid-columns: 12;
 
+$grid-gutter-width: 3rem;
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -148,7 +150,7 @@ $spacers: (
   15: $spacer * 15,
 );
 
-// LINE HEIGHTS
+// LINE HEIGHT
 
 .lh-1 {
   line-height: 1;

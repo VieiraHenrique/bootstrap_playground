@@ -9,12 +9,12 @@ $link-hover-decoration: none;
 
 $nav-link-color: $black;
 $nav-link-hover-color: $peach;
-$nav-link-font-size: 14px;
+$nav-link-font-size: 0.875rem;
 $nav-link-font-weight: 400;
 
 // DEFINES THE PADDING BETWEEN NAV LINKS
-$wi-nav-link-padding: 44px;
-$wi-nav-link-padding-mobile: 20px;
+$wi-nav-link-padding: 2.75rem;
+$wi-nav-link-padding-mobile: 1.25rem;
 
 .navbar-nav {
   gap: $wi-nav-link-padding;
@@ -32,7 +32,7 @@ $wi-nav-link-padding-mobile: 20px;
 }
 
 .menu-spacer {
-  margin-top: 122px;
+  margin-top: 7.625rem;
 }
 
 // Dont't touch this

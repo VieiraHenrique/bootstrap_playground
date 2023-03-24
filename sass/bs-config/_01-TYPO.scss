@@ -4,8 +4,8 @@ $font-family-base: "Jost", sans-serif;
 
 // TYPO
 
-$font-size-base: 1rem; // 16px
-$lead-font-size: $font-size-base * 1.25; // 20px
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base * 1.25;
 
 $line-height-base: 1;
 
@@ -19,15 +19,10 @@ $paragraph-margin-bottom: 0;
 
 $display-font-sizes: (
   1: 3rem,
-  // 48px
   2: 2.5rem,
-  // 40px
   3: 1.25rem,
-  // 20px
   4: 0.938rem,
-  // 15px
   5: 0.875rem,
-  // 14px
 );
 
 $display-font-weight: 400;

@@ -1,6 +1,6 @@
 // PUT COMMENT OF WORDPRESS THEME HERE
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// IMPORTS
 
 @import "./mixins/mixins";
 @import "./bs-config/01-TYPO";
@@ -9,4 +9,18 @@
 @import "./bs-config/04-GRID";
 @import "./bs-config/05-SPACING";
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 // Import here the partials for your project.
+
+// ADAPTIVE SIZES
+
+html {
+  font-size: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 1.11vw;
+  }
+}

@@ -14047,4 +14047,14 @@ html {
   html {
     font-size: 1.11vw;
   }
+}
+@media screen and (min-width: 2395px) {
+  html {
+    font-size: 0.95vw;
+  }
+}
+@media screen and (min-width: 3800px) {
+  html {
+    font-size: 0.85vw;
+  }
 }/*# sourceMappingURL=style.css.map */

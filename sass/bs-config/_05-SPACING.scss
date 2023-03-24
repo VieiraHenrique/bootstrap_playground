@@ -1,0 +1,47 @@
+// SPACING
+$spacer: 10px;
+
+$spacers: (
+  0: 0,
+  1: $spacer,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+  13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15,
+);
+
+// LINE HEIGHT
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-12 {
+  line-height: 1.2 !important;
+}
+
+.lh-14 {
+  line-height: 1.4 !important;
+}
+
+.lh-16 {
+  line-height: 1.6 !important;
+}
+
+.lh-18 {
+  line-height: 1.8 !important;
+}
+
+.lh-2 {
+  line-height: 2 !important;
+}

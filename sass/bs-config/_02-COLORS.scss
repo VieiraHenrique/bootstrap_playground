@@ -1,0 +1,19 @@
+// BASE COLORS
+
+// Define black and white values
+$white: #fff;
+$black: #1d1c1e;
+
+// Create variables with colors and pass them into the theme colors
+$peach: #e7816b;
+$light-peach: #ffad9b;
+
+$theme-colors: (
+  "peach": $peach,
+  "light-peach": $light-peach,
+  "gray-light": #ccc,
+  "gray-dark": #333,
+);
+
+$body-bg: $white;
+$body-color: $black;

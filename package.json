@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "watch": "node-sass -i ./sass/styles.scss -o ./css --watch"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3",
-    "node-sass": "^8.0.0"
+    "bootstrap": "^5.2.3"
   }
 }

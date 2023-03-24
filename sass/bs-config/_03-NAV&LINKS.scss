@@ -1,0 +1,42 @@
+// LINKS
+
+$link-color: $black;
+$link-hover-color: $black;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+// NAV-LINKS
+
+$nav-link-color: $black;
+$nav-link-hover-color: $peach;
+$nav-link-font-size: 14px;
+$nav-link-font-weight: 400;
+
+// DEFINES THE PADDING BETWEEN NAV LINKS
+$wi-nav-link-padding: 44px;
+$wi-nav-link-padding-mobile: 20px;
+
+.navbar-nav {
+  gap: $wi-nav-link-padding;
+}
+
+.offcanvas {
+  border: none !important;
+  .navbar-nav {
+    gap: $wi-nav-link-padding-mobile;
+  }
+}
+
+.navbar {
+  z-index: 1030;
+}
+
+.menu-spacer {
+  margin-top: 122px;
+}
+
+// Dont't touch this
+$navbar-nav-link-padding-x: 0;
+$navbar-light-color: $nav-link-color;
+$navbar-light-hover-color: $nav-link-hover-color;
+//
